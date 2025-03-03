@@ -29,6 +29,11 @@ class Sempro extends Model
         return $this->belongsTo(Lecture::class);
     }
 
+    public function secondMentor()
+    {
+        return $this->belongsTo(Lecture::class);
+    }
+
     public function semhas()
     {
         return $this->hasOne(Semhas::class);

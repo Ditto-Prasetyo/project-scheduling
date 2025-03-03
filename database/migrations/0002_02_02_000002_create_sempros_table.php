@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignUuid('user_id')->constrained()->cascadeOnDelete();
             $table->foreignId('periode_id')->constrained()->cascadeOnDelete();
             $table->foreignId('mentor_id')->constrained('lectures')->cascadeOnDelete();
+            $table->foreignId('second_mentor_id')->constrained('lectures')->cascadeOnDelete();
             $table->string('doc_pra_proposal');
             $table->timestamps();
         });

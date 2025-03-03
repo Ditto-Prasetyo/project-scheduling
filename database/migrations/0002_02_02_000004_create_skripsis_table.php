@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('semhas_id')->constrained()->cascadeOnDelete();
             $table->foreignId('periode_id')->constrained('periodes')->cascadeOnDelete();
-            $table->foreignId('second_mentor_id')->constrained('lectures')->cascadeOnDelete();
             $table->timestamps();
         });
     }

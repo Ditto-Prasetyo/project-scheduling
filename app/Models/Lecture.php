@@ -19,9 +19,9 @@ class Lecture extends Model
         return $this->hasMany(Sempro::class, 'mentor_id');
     }
 
-    public function skripsis()
+    public function secondSempros()
     {
-        return $this->hasMany(Skripsi::class, 'second_mentor_id');
+        return $this->hasMany(Sempro::class, 'second_mentor_id');
     }
 
     public function scheduleLectures()

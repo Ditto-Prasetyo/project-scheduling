@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('google_id')->unique();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('password');
             $table->bigInteger('number_phone')->unique();
             $table->timestamps();
         });

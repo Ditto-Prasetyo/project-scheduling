@@ -24,11 +24,6 @@ class Skripsi extends Model
         return $this->belongsTo(Periode::class);
     }
 
-    public function second_mentor()
-    {
-        return $this->belongsTo(Lecture::class);
-    }
-
     public function schedules()
     {
         return $this->morphMany(Schedule::class, 'exam');

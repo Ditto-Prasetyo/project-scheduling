@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('semhas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('sempro_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('periode_id')->constrained('users')->cascadeOnDelete();
+            $table->foreignId('periode_id')->constrained('periodes')->cascadeOnDelete();
             $table->string('kompre');
             $table->timestamps();
         });

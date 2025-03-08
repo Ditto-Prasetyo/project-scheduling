@@ -3,7 +3,23 @@
   <div class="flex items-center p-4 bg-gradient-to-r from-gray-900 to-gray-800">
     <img src="{{ asset('storage/img/PCFix.png') }}" alt="Logo" class="w-10 h-10 mr-2">
     <span class="text-white font-bold text-lg">Siakad</span>
-      <span class="text-blue-300 font-semibold text-lg ml-1">UINMALANG</span>
+    <span class="text-blue-300 font-semibold text-lg ml-1">UINMALANG</span>
+  </div>
+
+  <!-- Informasi Mahasiswa -->
+  <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-gray-900 to-gray-800">
+    <!-- Foto Profil -->
+    <img src="{{ asset('storage/img/Alfariz.png') }}" alt="Profile" class="w-20 h-20 rounded-md">
+    
+    <!-- Nama dan NIM -->
+    <div class="flex flex-col">
+      <span class="text-white font-bold text-lg">Alfariz Muhan Mandega</span>
+      <span class="text-blue-300 font-semibold text-sm flex items-center">
+        <!-- Ikon Kartu Identitas -->
+        <img src="{{ asset('storage/img/Badge.png') }}" alt="Profile" class="w-8 h-8 mr-2">
+        220605110025
+      </span>  
+    </div>
   </div>
 
   <!-- Menu -->

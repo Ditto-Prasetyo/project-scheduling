@@ -13,7 +13,7 @@
     <!-- Card Profil -->
     <div class="bg-white p-4 rounded-md shadow">
       <div class="flex items-center space-x-4">
-        <img src="{{ asset('storage/img/menpro.jpg') }}" alt="Foto Profil" class="w-20 h-20 rounded-md">
+        <img src="{{ asset('storage/img/Alfariz.png') }}" alt="Foto Profil" class="w-20 h-20 rounded-md">
         <div>
           <h3 class="text-lg font-bold">[Nama Lengkap]</h3>
           <p class="text-sm">Mahasiswa Aktif</p>

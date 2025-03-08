@@ -24,6 +24,7 @@
       <!-- MAIN: flex-1 agar mendorong footer ke bawah jika konten tinggi -->
       <main class="flex-1 p-4">
         @yield('content')
+        @yield('content2')
       </main>
 
       <!-- FOOTER: tetap di bawah konten, masih dalam flex container -->

@@ -1,7 +1,7 @@
 <div class="bg-gradient-to-b from-indigo-700 to-indigo-900 w-64 h-screen text-white flex flex-col">
     <!-- Bagian Logo atau Profil Sidebar -->
     <div class="flex items-center p-4">
-      <img src="{{ asset('storage/img/menpro.jpg') }}" alt="Logo" class="w-10 h-10 mr-2">
+      <img src="{{ asset('storage/img/UIN.png') }}" alt="Logo" class="w-10 h-10 mr-2">
       <span class="font-bold text-lg">SIAKAD</span>
     </div>
   

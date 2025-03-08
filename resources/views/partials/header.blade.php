@@ -3,7 +3,7 @@
     <div class="flex items-center space-x-4">
       <span class="text-green-600 font-semibold">Mahasiswa Aktif</span>
       <!-- Atau tambahkan avatar user di sini -->
-      <img src="{{ asset('storage/img/menpro.jpg') }}" alt="Avatar" class="w-8 h-8 rounded-full">
+      <img src="{{ asset('storage/img/Alfariz.png') }}" alt="Avatar" class="w-8 h-8 rounded-full">
     </div>
   </header>
   

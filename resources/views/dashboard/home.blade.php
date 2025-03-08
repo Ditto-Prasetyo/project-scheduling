@@ -3,7 +3,7 @@
 @section('content')
   <!-- Bagian Salam -->
   <div class="bg-gray-50 p-4 rounded-md mb-4">
-    <h2 class="text-xl font-bold">Salam, [Nama Mahasiswa]</h2>
+    <h2 class="text-xl font-bold">Salam, Alfariz Muhan Mandega</h2>
     <p class="text-sm text-gray-600">Info Profil & Email UIN, Klik <a href="#" class="text-blue-600">Di Sini</a></p>
     <!-- ... daftar link ubah password, buka email, dsb. -->
   </div>
@@ -13,9 +13,9 @@
     <!-- Card Profil -->
     <div class="bg-white p-4 rounded-md shadow">
       <div class="flex items-center space-x-4">
-        <img src="{{ asset('storage/img/menpro.jpg') }}" alt="Foto Profil" class="w-20 h-20 rounded-md">
+        <img src="{{ asset('storage/img/Alfariz.png') }}" alt="Foto Profil" class="w-20 h-20 rounded-md">
         <div>
-          <h3 class="text-lg font-bold">[Nama Lengkap]</h3>
+          <h3 class="text-lg font-bold">Alfariz Muhan Mandega</h3>
           <p class="text-sm">Mahasiswa Aktif</p>
         </div>
       </div>
@@ -39,11 +39,11 @@
     <div class="bg-white p-4 rounded-md shadow">
       <h3 class="text-lg font-bold mb-2">Data Akademik</h3>
       <div class="space-y-2">
-        <p><strong>NIM:</strong> [NIM]</p>
+        <p><strong>NIM:</strong> 220605110131</p>
         <p><strong>Status Studi:</strong> Mahasiswa Aktif</p>
         <p><strong>Jurusan:</strong> S1 Teknik Informatika</p>
         <p><strong>Akreditasi:</strong> Unggul (040/SK/LAM-INFOKOM/Ak/S/III/2024)</p>
-        <p><strong>Dosen Wali:</strong> [Nama Dosen Wali]</p>
+        <p><strong>Dosen Wali:</strong> Dr. Zainal Abidin M.kom</p>
         <p><strong>Semester:</strong> VI (Enam)</p>
       </div>
     </div>

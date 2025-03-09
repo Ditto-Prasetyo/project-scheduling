@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siakad</title>
+  <title>Sistem Informasi Akademik Universitas</title>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+  <link href="storage/img/UIN-2.1.png" rel='shortcut icon'>
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Kontainer utama, min-h-screen agar tinggi minimal = tinggi layar -->

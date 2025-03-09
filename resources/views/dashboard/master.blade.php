@@ -10,9 +10,9 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Kontainer utama, min-h-screen agar tinggi minimal = tinggi layar -->
-  <div class="min-h-screen flex">
+  <div class="min-h-screen flex pl-64">
     <!-- SIDEBAR -->
-    <aside class="w-64 bg-indigo-900 text-white flex flex-col">
+    <aside class="fixed top-0 left-0 bg-indigo-900 text-white w-64 h-screen overflow-y-auto z-50">
       <!-- Letakkan logo, menu, dll. di sini -->
       @include('partials.sidebar')
     </aside>
@@ -24,7 +24,7 @@
       @include('partials.header')
 
       <!-- MAIN: flex-1 agar mendorong footer ke bawah jika konten tinggi -->
-      <main class="flex-1 p-4">
+      <main class="ml-64 flex-1 p-6">
         @yield('content')
       </main>
 

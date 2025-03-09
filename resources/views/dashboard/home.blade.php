@@ -5,7 +5,6 @@
   <div class="bg-gray-50 p-4 rounded-md mb-4">
     <h2 class="text-xl font-bold">Salam, Alfariz Muhan Mandega</h2>
     <p class="text-sm text-gray-600">Info Profil & Email UIN, Klik <a href="#" class="text-blue-600">Di Sini</a></p>
-    <!-- ... daftar link ubah password, buka email, dsb. -->
   </div>
 
   <!-- Grid 2 Kolom -->
@@ -19,7 +18,6 @@
           <p class="text-sm">Mahasiswa Aktif</p>
         </div>
       </div>
-      <!-- Mungkin info singkat email, dsb. -->
     </div>
 
     <!-- Card Free Access Journal -->
@@ -31,6 +29,13 @@
         <li><a href="#" class="text-blue-600 hover:underline">Cambridge Core</a></li>
       </ul>
     </div>
+  </div>
+
+  <!-- 📊 Grafik IP & IPK Mahasiswa -->
+  <div class="bg-white p-4 mt-6 rounded-md shadow">
+    <h3 class="text-lg font-bold mb-2 ">Grafik Indeks Prestasi</h3>
+    <p class="text-sm text-gray-600 mb-4">[220605110025 – Alfariz Muhan Mandega]</p>
+    <canvas id="grafikIP" height="120"></canvas>
   </div>
 
   <!-- Grid 2 Kolom untuk Data Akademik & Jadwal Kuliah -->
@@ -60,4 +65,58 @@
     <blockquote class="italic text-gray-600">"Lelah hadir untuk menjadi pengingat seberapa besar perjuanganmu. Kalau kamu lelah, rehat sejenak."</blockquote>
     <span class="text-sm text-gray-500">Positive Quotes</span>
   </div>
+
+  <!-- Script Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('grafikIP').getContext('2d');
+    const grafikIP = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['2223/1 (23 sks)', '2223/2 (24 sks)', '2324/1 (22 sks)', '2324/2 (22 sks)', '2425/1 (24 sks)'],
+            datasets: [
+                {
+                    label: 'IP Semester',
+                    data: [3.7, 3.65, 3.85, 3.74, 3.94],
+                    borderColor: 'rgba(59, 130, 246, 1)',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    fill: false,
+                    tension: 0.3
+                },
+                {
+                    label: 'IP Kumulatif',
+                    data: [3.7, 3.68, 3.73, 3.74, 3.78],
+                    borderColor: 'rgba(17, 24, 39, 1)',
+                    backgroundColor: 'rgba(17, 24, 39, 0.1)',
+                    fill: false,
+                    tension: 0.3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom' },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => context.dataset.label + ": " + context.raw.toFixed(2)
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    title: { display: true, text: 'Indeks Prestasi' },
+                    min: 3.0,
+                    max: 4.0,
+                    ticks: {
+                        stepSize: 0.2
+                    }
+                },
+                x: {
+                    title: { display: true, text: 'Semester (SKS)' }
+                }
+            }
+        }
+    });
+  </script>
 @endsection

@@ -1,7 +1,7 @@
 @extends("dashboard.master")
 
 @section("content")
-<div class="flex h-screen">
+<div class="flex min-h-screen">
     <!-- Sidebar -->
     <div class="w-64 bg-blue-900 text-white p-5 space-y-4">
         <h2 class="text-lg font-bold">Siakad Universitas</h2>

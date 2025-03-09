@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-b from-indigo-700 to-indigo-900 w-64 h-screen text-white flex flex-col">
+<div class="fixed top-0 left-0 bg-gradient-to-b from-indigo-700 to-indigo-900 w-64 h-screen text-white flex flex-col z-50">
   <!-- Bagian Logo atau Profil Sidebar -->
   <div class="flex items-center p-4 bg-gradient-to-r from-gray-900 to-gray-800">
     <img src="{{ asset('storage/img/PCFix.png') }}" alt="Logo" class="w-10 h-10 mr-2">
@@ -16,14 +16,14 @@
       <span class="text-white font-bold text-lg">Alfariz Muhan Mandega</span>
       <span class="text-blue-300 font-semibold text-sm flex items-center">
         <!-- Ikon Kartu Identitas -->
-        <img src="{{ asset('storage/img/Badge.png') }}" alt="Profile" class="w-8 h-8 mr-2">
+        <i class="fas fa-address-card mr-2"></i>
         220605110025
       </span>  
     </div>
   </div>
 
   <!-- Menu -->
-  <nav class="flex-1">
+  <nav class="flex-1 overflow-y-auto pb-4">
     <ul>
       <li class="px-4 py-2 hover:bg-indigo-800">
         <span class="text-blue-300 font-semibold text-sm flex items-center">

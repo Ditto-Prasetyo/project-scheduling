@@ -6,6 +6,7 @@
   <title>Sistem Informasi Akademik Universitas</title>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   <link href="storage/img/UIN-2.1.png" rel='shortcut icon'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Kontainer utama, min-h-screen agar tinggi minimal = tinggi layar -->
@@ -25,7 +26,6 @@
       <!-- MAIN: flex-1 agar mendorong footer ke bawah jika konten tinggi -->
       <main class="flex-1 p-4">
         @yield('content')
-        @yield('content2')
       </main>
 
       <!-- FOOTER: tetap di bawah konten, masih dalam flex container -->

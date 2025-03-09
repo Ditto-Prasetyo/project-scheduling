@@ -32,11 +32,12 @@
   </div>
 
   <!-- 📊 Grafik IP & IPK Mahasiswa -->
-  <div class="bg-white p-4 mt-6 rounded-md shadow">
-    <h3 class="text-lg font-bold mb-2 ">Grafik Indeks Prestasi</h3>
-    <p class="text-sm text-gray-600 mb-4">[220605110025 – Alfariz Muhan Mandega]</p>
+  <div class="bg-white p-4 mt-6 rounded-md shadow text-center">
+    <h3 class="text-lg font-bold mb-2">Grafik Indeks Prestasi</h3>
+    <p class="text-sm text-gray-600 mb-4">[220605110025 - Alfariz Muhan Mandega]</p>
     <canvas id="grafikIP" height="120"></canvas>
   </div>
+
 
   <!-- Grid 2 Kolom untuk Data Akademik & Jadwal Kuliah -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
